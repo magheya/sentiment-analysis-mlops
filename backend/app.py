@@ -11,9 +11,8 @@ class InputText(BaseModel):
 app = FastAPI()
 
 # Load the model
-
-model_path = os.path.join(os.path.dirname(__file__), '..', 'mlflow_model')
-model = mlflow.pyfunc.load_model(model_path)
+MODEL_PATH = "mlflow_model"
+model = mlflow.pyfunc.load_model(MODEL_PATH)
 
 # Request schema
 class TextInput(BaseModel):
