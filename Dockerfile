@@ -11,7 +11,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # Copy everything else
 COPY . .
 
-# Expose ports
+# Expose ports.
 EXPOSE 8000  
 EXPOSE 8501
 
