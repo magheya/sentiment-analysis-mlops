@@ -19,7 +19,7 @@ This project demonstrates how to operationalize an NLP model for sentiment analy
 
 ## 🖼️ Preview
 
-![Sentiment Analysis UI](Screenshot 2025-07-29 at 7.49.55 PM.png)
+![Sentiment Analysis UI](website-overview.png)
 
 ---
 
