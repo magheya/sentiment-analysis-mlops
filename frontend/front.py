@@ -2,7 +2,8 @@ import streamlit as st
 import requests
 import os
 
-API_URL = "https://sentiment-api.onrender.com/predict"
+API_URL = "https://sentiment-api-n94n.onrender.com/predict"
+
 
 st.title("Sentiment Analysis")
 
