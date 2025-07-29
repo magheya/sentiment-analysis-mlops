@@ -29,7 +29,7 @@ This project demonstrates how to operationalize an NLP model for sentiment analy
 .
 ├── backend/                # FastAPI app for prediction
 │   ├── app.py              # Main FastAPI app
-│   ├── mlflow/model/              # Loaded ML model
+│   ├── mlflow/model/       # Loaded ML model
 │   └── Dockerfile          # Dockerfile for backend
 │   └── requirements.txt
 ├── frontend/               # Streamlit web UI
