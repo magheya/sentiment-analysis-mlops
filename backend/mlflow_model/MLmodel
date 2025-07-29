@@ -1,11 +1,11 @@
-artifact_path: file:///Users/mbp/sentiment-analysis-mlops/mlruns/0/models/m-c399dac9e76d4e3694a76b2e815afddc/artifacts
+artifact_path: file:///Users/mbp/sentiment-analysis-mlops/mlruns/0/models/m-b845a4430ac047ffaa833c37404ba2bf/artifacts
 flavors:
   python_function:
     env:
       conda: conda.yaml
       virtualenv: python_env.yaml
     loader_module: mlflow.transformers
-    python_version: 3.13.3
+    python_version: 3.13.5
   transformers:
     code: null
     components:
@@ -21,11 +21,11 @@ flavors:
     transformers_version: 4.53.2
 is_signature_from_type_hint: false
 mlflow_version: 3.1.1
-model_id: m-c399dac9e76d4e3694a76b2e815afddc
-model_size_bytes: 268797376
-model_uuid: m-c399dac9e76d4e3694a76b2e815afddc
+model_id: m-b845a4430ac047ffaa833c37404ba2bf
+model_size_bytes: 268797474
+model_uuid: m-b845a4430ac047ffaa833c37404ba2bf
 prompts: null
-run_id: d1997e4ed99841578d9a83f8a76ae9ad
+run_id: d778f1e93fd948f6b29fa770651c3315
 saved_input_example_info:
   artifact_path: input_example.json
   serving_input_path: serving_input_example.json
@@ -37,4 +37,4 @@ signature:
     true}]'
   params: null
 type_hint_from_example: false
-utc_time_created: '2025-07-27 17:16:12.407363'
+utc_time_created: '2025-07-29 20:10:20.952598'
