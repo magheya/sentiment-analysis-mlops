@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
+import os
 
-API_URL = "https://sentiment-analysis-mlops-oqe4.onrender.com/predict"  # Update this if your FastAPI backend is hosted elsewhere
+API_URL = "https://sentiment-api.onrender.com/predict"
 
 st.title("Sentiment Analysis")
 
@@ -16,16 +17,12 @@ if st.button("Analyze Sentiment"):
         with st.spinner("Analyzing..."):
             try:
                 response = requests.post(API_URL, json={"text": text_input})
-                result = response.json()
-
                 if response.status_code == 200:
                     result = response.json()
-                    prediction = result["prediction"]
-                    label = prediction["label"]
-                    score = prediction["score"]
-                    
+                    label = result["prediction"]["label"]
+                    score = result["prediction"]["score"]
                     st.success(f"Prediction: {label} ({score:.2f})")
                 else:
-                    st.error(f"Error: {result.get('detail', 'Unknown error')}")
+                    st.error(f"Error: {response.json().get('detail', 'Unknown error')}")
             except Exception as e:
                 st.error(f"Could not connect to API: {e}")
