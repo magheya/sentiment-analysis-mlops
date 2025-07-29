@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "http://localhost:8000/predict"  # Update this if your FastAPI backend is hosted elsewhere
+API_URL = "https://sentiment-analysis-mlops-oqe4.onrender.com/predict"  # Update this if your FastAPI backend is hosted elsewhere
 
 st.title("Sentiment Analysis")
 
